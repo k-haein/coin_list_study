@@ -19,7 +19,7 @@ const Item = styled.li`
 export default withRouter(({ location: { pathname } }) => (
   <Header>
     <List>
-      <Item selected={pathname === "/"}>
+      <Item selected={pathname === "/"}> 
         <Link to="/">Prices</Link>
       </Item>
       <Item selected={pathname === "/exchanges"}>
