@@ -8,8 +8,7 @@ import Prices from "../Screens/Prices";
 export default () => {
   return (
     <Router>
-      <Header // 네비게이션
-      /> 
+      <Header />
       <Route path="/" exact component={Prices} />
       <Route path="/exchanges" component={Exchanges} />
       <Route path="/coins" exact component={Coins} />

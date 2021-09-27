@@ -9,17 +9,19 @@ const List = styled.ul`
   display: flex;
 `;
 const Item = styled.li`
-  margin-right: 20px;
+  padding: 10px;
+  border-radius: 20px;
+  margin-right: 30px;
   text-transform: uppercase;
   font-weight: 600;
-  color: ${props => (props.selected ? "white" : "black")};
-  background-color: ${props => (props.selected ? "#f1c40f" : "white")};
+  color: ${(props) => (props.selected ? "white" : "black")};
+  background-color: ${(props) => (props.selected ? "blue" : "white")};
 `;
 
 export default withRouter(({ location: { pathname } }) => (
   <Header>
     <List>
-      <Item selected={pathname === "/"}> 
+      <Item selected={pathname === "/"}>
         <Link to="/">Prices</Link>
       </Item>
       <Item selected={pathname === "/exchanges"}>
