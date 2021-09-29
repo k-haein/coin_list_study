@@ -13,7 +13,7 @@ const Coin = ({ name, symbol, rank }) => (
     <Ranking>#{rank}</Ranking> {name}/{symbol}
   </Container>
 );
-
+ 
 Coin.propTypes = {
   id: PropTypes.string.isRequired,
   name: PropTypes.string.isRequired,
