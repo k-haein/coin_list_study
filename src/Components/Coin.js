@@ -9,7 +9,7 @@ const Ranking = styled.span`
 `;
 
 const Coin = ({ name, symbol, rank }) => (
-  <Container>
+  <Container> 
     <Ranking>#{rank}</Ranking> {name}/{symbol}
   </Container>
 );
